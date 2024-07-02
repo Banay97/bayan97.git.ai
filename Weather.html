@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WeatherStyle.css">
+    
+    <title>Weather Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 class="title">DojoWeather</h1>
+            <ul onclick="displayAlert(this)">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chocago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+
+
+        <div class="SanJose">
+            <h2 class="name">San Jose</h2>
+            <p class="info">show temperature in <select name="temp" id="temp" onchange="convertTemperature(this)">
+                    <option value="C" class="cTemp">°C</option>
+                    <option value="F" class="fTemp">°F</option>
+                </select></p>
+
+        </div>
+        <hr>
+
+        <div class="big-container">
+            <div class="small-container">
+                <h3 class="days">Today</h3>
+                <img src="./img/some_rain.png" alt="rain" class="img">
+                <p class="weather">some rain</p>
+                <div class="Temprature">
+                    <h1 class="temp1"><span class="tempW">24</span></h1>
+                    <h1 class="temp2"><span class="tempW">18</span></h1>
+                </div>
+
+
+            </div>
+            <div class="small-container">
+                <h3 class="days">Tomorrow</h3>
+                <img src="./img/some_sun.png" alt="sun" class="img">
+                <p class="weather">some sun</p>
+                <div class="Temprature">
+                    <h1 class="temp1"><span class="tempW">27</span></h1>
+                    <h1 class="temp2"><span class="tempW">19</span></h1>
+                </div>
+            </div>
+            <div class="small-container">
+                <h3 class="days">Friday</h3>
+                <img src="./img/some_clouds.png" alt="cloud" class="img">
+                <p class="weather">some clouds</p>
+                <div class="Temprature">
+                    <h1 class="temp1"><span class="tempW">21</span></h1>
+                    <h1 class="temp2"><span class="tempW">16</span></h1>
+                </div>
+            </div>
+            <div class="small-container">
+                <h3 class="days">Saturday</h3>
+                <img src="./img/some_sun.png" alt="sun" class="img">
+                <p class="weather">some sun</p>
+                <div class="Temprature">
+                    <h1 class="temp1"><span class="tempW">26</span></h1>
+                    <h1 class="temp2"><span class="tempW">21</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="btn" onclick="acceptCookie(this)"> I accept</button>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the adible ones) to personalize
+                content and ads, to provide social media featuresand to
+                analyes our trafifc.<a href="#" class="a">Read more...</a></p>
+            <img src="./img/cookie.png" alt="cookie" class="cookie">
+
+        </div>
+
+
+    </div>
+</body>
+<script src="Weather.js"></script>
+
+</html>
